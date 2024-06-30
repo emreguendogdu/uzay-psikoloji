@@ -20,6 +20,9 @@ importers:
       less:
         specifier: ^4.2.0
         version: 4.2.0
+      netlify-cms-app:
+        specifier: ^2.15.72
+        version: 2.15.72(@types/hoist-non-react-statics@3.3.5)(@types/node@20.14.9)(@types/react@17.0.80)(graphql@15.9.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
 
 packages:
 
@@ -4845,7 +4848,7 @@ snapshots:
   '@types/vfile@3.0.2':
     dependencies:
       '@types/node': 20.14.9
-      '@types/unist': 2.0.10
+      '@types/unist': 3.0.2
       '@types/vfile-message': 2.0.0
 
   '@types/zen-observable@0.8.7': {}
