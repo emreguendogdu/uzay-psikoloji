@@ -1,18 +1,18 @@
 [
   {
-    "key": "Home",
+    "key": "Anasayfa",
     "url": "/"
   },
   {
-    "key": "About Us",
+    "key": "Hakkımızda",
     "url": "/about/"
   },
   {
-    "key": "Projects",
-    "url": "/projects/"
+    "key": "Servisler",
+    "url": "/"
   },
   {
-    "key": "Reviews",
+    "key": "Değerlendirmeler",
     "url": "/reviews/"
   },
   {

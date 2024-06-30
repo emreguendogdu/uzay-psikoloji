@@ -1,1597 +1,992 @@
 ---
-import BaseLayout from "src/layouts/BaseLayout.astro";
-import CTA from "@components/CTA.astro";
+import BaseLayout from "src/layouts/BaseLayout.astro"
+import CTA from "@components/CTA.astro"
+import "@styles/index.less"
 ---
 
 <BaseLayout
   title="Pixel Perfect Websites"
   description="Meta description for the page"
-  preloadImg={import("../assets/images/landing.jpg")}
+  preloadImg={import("../assets/images/landing.webp")}
 >
   <!-- ============================================ -->
   <!--                    Hero                      -->
   <!-- ============================================ -->
 
-  <section id="hero">
+  <section id="hero-1203">
     <div class="cs-container">
-      <div class="cs-flex-group">
-        <span class="cs-topper">mountain hiking society</span>
-        <h1 class="cs-title">Explore the World with Exciting People</h1>
+      <div class="cs-content">
+        <span class="cs-topper">Uzay Psikoloji</span>
+        <h1 class="cs-title">
+          Ruhunuzun Mimarı: Bizimle İç Dünyanızı Keşfedin
+        </h1>
         <p class="cs-text">
-          Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius.
-          Nibh tortor id aliquet lectus proin nibh condimentum.
+          Uzay Psikoloji ile duygusal ve zihinsel sağlığınızı güçlendirin. 20
+          yılı aşkın deneyimimizle size özel çözümler sunuyoruz.
         </p>
-        <a href="/about" class="cs-button-solid">Explore More</a>
-        <a href="/contact" class="cs-button-transparent">
+        <a href="/iletisim" class="cs-button-solid">Ücretsiz İlk Seans &gt;</a>
+      </div>
+      <!--To make your own background crops of people use https://www.remove.bg/-->
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/consultant.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/consultant.webp"
+        />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/consultant.webp"
+          alt="accountant"
+          width="886"
+          height="842"
+        />
+      </picture>
+    </div>
+    <!--Floating Arrow-->
+    <img
+      class="cs-floater"
+      aria-hidden="true"
+      decoding="async"
+      src="/assets/svgs/psychology.svg"
+      alt="accountant"
+      width="1465"
+      height="950"
+    />
+  </section>
+
+  <!-- ============================================ -->
+  <!--                   Services                   -->
+  <!-- ============================================ -->
+
+  <section id="services-341">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Hizmetlerimiz</span>
+        <h2 class="cs-title">Uzman Kadromuzla Sizin İçin Buradayız</h2>
+        <p class="cs-text">
+          Herkesin hikayesi farklıdır ve biz bunu çok iyi biliyoruz. Bu yüzden
+          bireysel terapi, çift ve aile terapisi, çocuk terapisi ve bağımlılık
+          terapisi gibi çeşitli alanlarda size özel çözümler sunuyoruz. Neye
+          ihtiyacınız olduğunu birlikte keşfedelim.
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <a href="/servisler/bireysel-terapi" class="cs-link">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/personal-therapy.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/personal-therapy.webp"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="/assets/images/personal-therapy.webp"
+                alt="cleaner"
+                width="413"
+                height="240"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Bireysel Terapi</h3>
+            <p class="cs-item-text">
+              Bireysel terapide, kişisel zorlukları aşmanıza ve kendinizi daha
+              iyi anlamanıza yardımcı oluyoruz. Stres, kaygı veya depresyonla
+              mücadele ederken size özel stratejiler geliştiriyoruz.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="/servisler/cift-aile-terapisi" class="cs-link">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/couple-therapy.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/couple-therapy.webp"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="/assets/images/couple-therapy.webp"
+                alt="cleaner"
+                width="413"
+                height="240"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Çift ve Aile Terapisi</h3>
+            <p class="cs-item-text">
+              Çift ve aile terapisinde, sevdiklerinizle iletişiminizi
+              geliştirmenize destek oluyoruz. Çatışmaları çözme, anlayışı
+              artırma ve daha sağlıklı ilişkiler kurma yolunda size rehberlik
+              ediyoruz.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="/servisler/cocuk-terapisi" class="cs-link">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/child-therapy.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/child-therapy.webp"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="/assets/images/child-therapy.webp"
+                alt="cleaner"
+                width="413"
+                height="240"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Çocuk Terapisi</h3>
+            <p class="cs-item-text">
+              Çocuk terapisinde, minik danışanlarımızın duygusal ve davranışsal
+              zorluklarını aşmalarına yardımcı oluyoruz. Oyun terapisi ve aile
+              katılımıyla, çocuğunuzun sağlıklı gelişimini destekliyoruz.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="/servisler/bagimlilik-terapisi" class="cs-link">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/addiction-therapy.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/addiction-therapy.webp"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="/assets/images/addiction-therapy.webp"
+                alt="cleaner"
+                width="413"
+                height="240"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Bağımlılık Terapisi</h3>
+            <p class="cs-item-text">
+              Bağımlılık terapisinde, zararlı alışkanlıklardan kurtulmanız için
+              size destek oluyoruz. Kişiye özel yaklaşımlarla, yeni ve sağlıklı
+              bir yaşam tarzı geliştirmenize yardımcı oluyoruz.
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--             About              -->
+  <!-- ============================================ -->
+
+  <section id="sbs-r-1892">
+    <div class="cs-container">
+      <div class="cs-image-group">
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/consultancy.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/consultancy.webp"
+          />
           <img
-            class="cs-img"
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-            alt="play icon"
-            width="17"
-            height="17"
+            src="/assets/images/consultancy.webp"
+            alt="dermatologist"
+            width="324"
+            height="467"
           />
-           Get in Touch
-        </a>
+        </picture>
+        <img
+          class="cs-graphic cs-brown"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/lines-reverse.svg"
+          alt="graphic"
+          width="208"
+          height="203"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-peach"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/blob-reverse.svg"
+          alt="graphic"
+          width="56"
+          height="42"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-beige"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-reverse.svg"
+          alt="graphic"
+          width="379"
+          height="394"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-leaf"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-reverse.svg"
+          alt="graphic"
+          width="179"
+          height="225"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-lines"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/mesh-reverse.svg"
+          alt="graphic"
+          width="189"
+          height="208"
+          aria-hidden="true"
+        />
+        <div class="cs-info">
+          <p class="cs-info-text">
+            <span class="cs-bold">Ödüllü Klinik</span>
+            Nebula Psikoloji Topluluğu tarafından, 2023 yılının en iyi ruh sağlığı
+            merkezi seçildik!
+          </p>
+        </div>
+      </div>
+      <div class="cs-content">
+        <div class="cs-flex">
+          <span class="cs-topper">Hakkımızda</span>
+          <h2 class="cs-title">20 Yıllık Deneyim, Binlerce Mutlu Danışan</h2>
+        </div>
+        <p class="cs-text-large">
+          Uzay Psikoloji, 2004 yılından beri Denizli'de hizmet veren, ruhunuzu
+          ve evinizi güçlendiren bir danışmanlık merkezidir.
+        </p>
+        <p class="cs-text">
+          Kuruluşumuzdan bu yana, ruh sağlığı alanında en güncel ve etkili
+          terapi yöntemlerini kullanarak, binlerce danışanımıza hizmet verdik.
+          Deneyimli psikolog ve psikoterapist kadromuzla, her yaştan ve her
+          kesimden sizlere özel, gelişiminize yönelik çözümler sunuyoruz.
+        </p>
+        <p class="cs-text">
+          Merkezimizde, bireysel terapi, çift ve aile terapisi, çocuk terapisi
+          ve bağımlılık terapisi gibi geniş bir yelpazede hizmet veriyoruz. Her
+          danışanımızın benzersiz olduğuna inanıyor ve buna uygun olarak
+          kişiselleştirilmiş terapi planları oluşturuyoruz. Bütüncül
+          yaklaşımımız sayesinde, sadece belirtileri değil, sorunların temel
+          nedenlerini de ele alıyoruz.
+        </p>
+        <p class="cs-text">
+          Uzay Psikoloji olarak, sürekli kendimizi geliştirmeye ve alanımızdaki
+          en son gelişmeleri takip etmeye önem veriyoruz. Düzenli olarak ulusal
+          ve uluslararası konferanslara katılıyor, mesleki eğitimlerimizi
+          güncelliyoruz. Amacımız, Denizli ve çevresindeki bireylere en kaliteli
+          ve etkili ruh sağlığı hizmetini sunmak, toplum sağlığına katkıda
+          bulunmaktır.
+        </p>
+        <a href="/hakkimizda" class="cs-button-solid">Daha Fazla Öğren &gt;</a>
       </div>
     </div>
+  </section>
 
-    <!-- Background Image -->
-    <picture class="cs-picture">
+  <!-- ============================================ -->
+  <!--                 Service 1                 -->
+  <!-- ============================================ -->
+
+  <section id="sbs-1125">
+    <div class="cs-container">
+      <!-- Left Image Section -->
+      <div class="cs-image-group">
+        <!--Main Image-->
+        <picture class="cs-picture cs-picture1">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/personal-therapy.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/personal-therapy.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/personal-therapy.webp"
+            alt="person with box"
+            width="657"
+            height="676"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--Circle Graphic-->
+        <img
+          class="cs-graphic"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/service1-circle.svg"
+          alt="graphic"
+          width="641"
+          height="660"
+          aria-hidden="true"
+        />
+      </div>
+      <!-- Right Content Section-->
+      <div class="cs-content">
+        <span class="cs-topper">Bireysel Terapi: Kendinizi Keşfedin</span>
+        <h2 class="cs-title">Gerçek Sizi Daha İyi Anlamanın Yolu</h2>
+        <p class="cs-text">
+          Bireysel terapi, sizin hikayenizi dinlememiz ve anlamanız için güvenli
+          bir alan yaratır. Burada, hayatınızdaki zorlukları, duygularınızı ve
+          hedeflerinizi rahatça konuşabilirsiniz. Depresyon, kaygı, stres,
+          özgüven sorunları veya ilişki problemleri - ne olursa olsun, sizi
+          dinlemeye ve anlamaya hazırız. Birlikte, düşüncelerinizi ve
+          davranışlarınızı keşfeder, sizi rahatsız eden kalıpları fark eder ve
+          bunları nasıl değiştirebileceğinizi öğrenirsiniz. Size en uygun
+          yöntemi birlikte seçeriz - bu bazen bilişsel davranışçı terapi
+          olabilir, bazen de mindfulness tekniklerini deneyebiliriz.
+        </p>
+        <p class="cs-text">
+          Amacımız sadece şu anki sorunlarınızı çözmek değil, aynı zamanda
+          gelecekte karşılaşabileceğiniz zorluklarla başa çıkma gücünü size
+          kazandırmak. Bireysel terapi ile, kendinizi daha iyi anlayacak,
+          hayatınızı daha mutlu ve anlamlı kılacak araçlara sahip olacaksınız.
+          Bu yolculukta size eşlik etmekten mutluluk duyarız.
+        </p>
+        <ul class="cs-ul">
+          <li class="cs-li">
+            Güvenli ve yargısız bir ortamda kendinizi ifade etme fırsatı.
+          </li>
+          <li class="cs-li">
+            Kişiselleştirilmiş terapi planı ile ihtiyaçlarınıza özel çözümler.
+          </li>
+          <li class="cs-li">
+            Duygu ve düşünce kalıplarınızı anlamak için profesyonel rehberlik.
+          </li>
+          <li class="cs-li">
+            Stres, kaygı ve depresyonla başa çıkma becerilerini geliştirme.
+          </li>
+        </ul>
+        <a
+          class="cs-button-solid"
+          aria-label="learn more about our programs"
+          href="/iletisim">Ücretsiz İlk Seans &gt;</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                 Blog                 -->
+  <!-- ============================================ -->
+
+  <section id="blog-1347">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Sizin İçin Yazdık</span>
+        <h2 class="cs-title">Ruh Sağlığınız İçin Faydalı Bilgiler</h2>
+        <p class="cs-text">
+          Uzay Psikoloji blogumuzda, sizin için faydalı olacağını düşündüğümüz
+          konuları ele alıyoruz. Uzmanlarımızın hazırladığı yazılarla, kendinizi
+          ve sevdiklerinizi daha iyi anlamanıza yardımcı olmak istiyoruz.
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <a class="cs-link" href="/blog/ekran-bagimliligi">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/phone-addiction.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/phone-addiction.webp"
+              />
+              <img
+                decoding="async"
+                src="/assets/images/phone-addiction.webp"
+                alt="agency"
+                width="413"
+                height="374"
+                aria-hidden="true"
+              />
+            </picture>
+            <div class="cs-item-text">
+              <h3 class="cs-h3">
+                Çocuğunuzun Ekran Bağımlılığı Sizi Endişelendiriyor mu?
+                <picture class="cs-icon-wrapper">
+                  <img
+                    class="cs-icon"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                    alt="arrow"
+                    width="413"
+                    height="374"
+                    aria-hidden="true"
+                  />
+                </picture>
+              </h3>
+              <div class="cs-info">
+                <span class="cs-date">
+                  <img
+                    class="cs-date-icon"
+                    decoding="async"
+                    src="/assets/svgs/calendar.svg"
+                    alt="calendar"
+                    width="413"
+                    height="374"
+                    aria-hidden="true"
+                  />
+                  07 May, 2024
+                </span>
+                <span class="cs-category"> Eğitim </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a class="cs-link" href="/blog/5-dakikada-mindfullness-egzersizleri">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/mindfulness.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/mindfulness.webp"
+              />
+              <img
+                decoding="async"
+                src="/assets/images/mindfulness.webp"
+                alt="agency"
+                width="413"
+                height="374"
+                aria-hidden="true"
+              />
+            </picture>
+            <div class="cs-item-text">
+              <h3 class="cs-h3">
+                Stresli Anlar İçin 5 Dakikalık Mindfulness Egzersizleri
+                <picture class="cs-icon-wrapper">
+                  <img
+                    class="cs-icon"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                    alt="arrow"
+                    width="413"
+                    height="374"
+                    aria-hidden="true"
+                  />
+                </picture>
+              </h3>
+              <div class="cs-info">
+                <span class="cs-date">
+                  <img
+                    class="cs-date-icon"
+                    decoding="async"
+                    src="/assets/svgs/calendar.svg"
+                    alt="calendar"
+                    width="413"
+                    height="374"
+                    aria-hidden="true"
+                  />
+                  21 May, 2024
+                </span>
+                <span class="cs-category"> Egzersiz </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a class="cs-link" href="/blog/kendinin-en-iyi-arkadasi-olmayi-ogren">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="/assets/images/self-discovery.webp"
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="/assets/images/self-discovery.webp"
+              />
+              <img
+                decoding="async"
+                src="/assets/images/self-discovery.webp"
+                alt="agency"
+                width="413"
+                height="374"
+                aria-hidden="true"
+              />
+            </picture>
+            <div class="cs-item-text">
+              <h3 class="cs-h3">
+                Kendinin En İyi Arkadaşı Olmayı Öğren
+                <picture class="cs-icon-wrapper">
+                  <img
+                    class="cs-icon"
+                    decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                    alt="arrow"
+                    width="413"
+                    height="374"
+                    aria-hidden="true"
+                  />
+                </picture>
+              </h3>
+              <div class="cs-info">
+                <span class="cs-date">
+                  <img
+                    class="cs-date-icon"
+                    decoding="async"
+                    src="/assets/svgs/calendar.svg"
+                    alt="calendar"
+                    width="413"
+                    height="374"
+                    aria-hidden="true"
+                  />
+                  04 Haz, 2024
+                </span>
+                <span class="cs-category">Eğitim</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--             Service 2             -->
+  <!-- ============================================ -->
+
+  <section id="sbs-371">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper"
+          >Çift ve Aile Terapisi: İlişkilerinizi Güçlendirin</span
+        >
+        <h2 class="cs-title">Sevdiklerinizle Daha İyi İletişim Kurun</h2>
+        <p class="cs-text">
+          Çift ve aile terapisinde amacımız, sevdiklerinizle aranızdaki
+          iletişimi güçlendirmek ve daha mutlu bir aile ortamı yaratmanıza
+          yardımcı olmaktır. Bazen en yakınımızdaki kişilerle bile anlaşmakta
+          zorlanabiliriz, bu çok doğal. Deneyimli terapistlerimiz, çiftler
+          arasındaki anlaşmazlıklar, ebeveyn-çocuk ilişkileri veya yeni bir aile
+          düzeni oluşturma gibi konularda size destek olur. Terapide, herkesin
+          düşüncelerini ve duygularını rahatlıkla ifade edebileceği güvenli bir
+          ortam yaratırız.
+        </p>
+        <p class="cs-text">
+          Her ailenin kendine özgü dinamikleri olduğunu biliyor ve buna uygun
+          çözümler üretiyoruz. Amacımız, aile üyeleri arasında anlayışı
+          artırmak, sorunları birlikte çözme becerilerini geliştirmek ve aile
+          bağlarınızı güçlendirmektir. Çift ve aile terapisi ile,
+          sevdiklerinizle daha derin ve anlamlı ilişkiler kurabilir, birlikte
+          büyüyüp gelişebilirsiniz. Bu yolculukta size rehberlik etmekten
+          mutluluk duyarız.
+        </p>
+        <a href="/iletisim" class="cs-button-solid">Ücretsiz İlk Seans &gt;</a>
+      </div>
+      <!--Left Image Group-->
+      <div class="cs-image-group">
+        <!--Faded Paint Splash-->
+        <img
+          class="cs-splash"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/blue-splash.svg"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          alt="splash icon"
+          width="570"
+          height="586"
+        />
+
+        <!--Blue Blob-->
+        <img
+          class="cs-blob"
+          src="/assets/svgs/blob.svg"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          alt="blob icon"
+          width="392"
+          height="497"
+        />
+
+        <!--Heart Icon  -->
+        <img
+          class="cs-lightning"
+          src="/assets/svgs/heart.svg"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          alt="heart icon"
+          width="392"
+          height="497"
+        />
+
+        <!--Left Circle Image-->
+        <picture class="cs-left-image">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/couple-therapy.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/couple-therapy.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/couple-therapy.webp"
+            alt="cleaning"
+            width="211"
+            height="211"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--Bottom Circle Image-->
+        <picture class="cs-bottom-image">
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning4.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning4.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning4.webp"
+            alt="cleaning"
+            width="180"
+            height="180"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--Main Person Image-->
+        <!--To make your own crops of people, use https://www.remove.bg/ to remove the background of any image-->
+        <picture class="cs-person">
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/female-happy.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/female-happy.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/female-happy.webp"
+            alt="cleaning"
+            width="386"
+            height="521"
+            aria-hidden="true"
+          />
+        </picture>
+        <!--Masking SVG to cover the bottom of the person image-->
+        <svg
+          class="cs-mask"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 383 173"
+          ><path
+            d="M0 131.021c0-29.542.317-41.863 1.067-41.4.587.363.983.052.881-.69-.502-3.66.132-4.85 2.583-4.85 2.264 0 2.507.363 2.3 3.447-.183 2.714.343 3.902 2.474 5.577 1.488 1.17 3.346 2.77 4.129 3.552.783.783 1.85 1.423 2.372 1.423.522 0 1.51.675 2.194 1.5.685.825 2.262 1.5 3.506 1.5 1.447 0 2.456.747 2.803 2.074.298 1.141 1.476 2.319 2.617 2.617 1.14.298 2.074.868 2.074 1.265 0 1.176 4.868 3.044 7.93 3.044 2.055 0 3.042.62 3.58 2.25l.744 2.25.442-2.25c.314-1.595 1.15-2.25 2.874-2.25 2.095 0 2.43.467 2.43 3.384 0 3.984 1.935 4.861 8.687 3.936 3.861-.53 4.313-.38 4.313 1.437 0 2.581 2.158 3.402 6.935 2.638 3.15-.504 3.859-.292 4.269 1.277.405 1.55 2.677 2.273 12.894 4.103 18.887 3.384 38.907 4.572 54.402 3.23 7.15-.62 15.475-1.296 18.5-1.503 13.731-.938 35.155-5.125 36.708-7.175.867-1.145 2.091-1.417 4.343-.967 2.97.594 20.732-3.208 24.769-5.301.924-.48 3.572-1.376 5.885-1.992 2.313-.616 4.869-1.783 5.679-2.594.81-.81 3.08-1.473 5.045-1.473 2.36 0 3.571-.465 3.571-1.372 0-.828 1.587-1.626 4-2.012 2.588-.414 4-1.165 4-2.128 0-1.034 1.068-1.488 3.5-1.488 1.925 0 3.5-.45 3.5-1s.879-1 1.953-1c2.39 0 7.047-2.038 7.047-3.083 0-.419 1.688-1.27 3.75-1.89 7.21-2.17 13.218-5.473 13.234-7.277.012-1.33.855-1.75 3.516-1.75 1.925 0 3.5-.45 3.5-1s.469-1 1.042-1c.573 0 1.586-.454 2.25-1.01.664-.555 4.583-3.598 8.708-6.76 10.945-8.394 18.178-16.216 25.328-27.393 3.004-4.696 3.488-6.198 2.988-9.277-.506-3.116-.29-3.754 1.422-4.202 2.287-.598 4.262-4.26 4.262-7.905 0-1.349.4-2.453.888-2.453.999 0 5.23-20.999 4.478-22.217-.266-.43.244-.783 1.134-.783.89 0 1.34-.45 1-1-.404-.653 6.156-1 18.941-1H383v173H0Zm18-35.44c0-2 .5-2.5 2.5-2.5s2.5.5 2.5 2.5-.5 2.5-2.5 2.5-2.5-.5-2.5-2.5z"
+            fill="#fff"></path></svg
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                    Steps                     -->
+  <!-- ============================================ -->
+
+  <section id="steps-1893">
+    <div class="cs-container">
+      <div class="cs-image-group">
+        <picture class="cs-picture">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="/assets/images/steps.webp"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="/assets/images/steps.webp"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/steps.webp"
+            alt="dermatologist"
+            width="324"
+            height="467"
+          />
+        </picture>
+        <img
+          class="cs-graphic cs-brown"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines2.svg"
+          alt="graphic"
+          width="100"
+          height="98"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-peach"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/peach-blob.svg"
+          alt="graphic"
+          width="42"
+          height="31"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-leaf"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-reverse.svg"
+          alt="graphic"
+          width="136"
+          height="171"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-dots"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-dots.svg"
+          alt="graphic"
+          width="159"
+          height="88"
+          aria-hidden="true"
+        />
+        <img
+          class="cs-graphic cs-lines"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/mesh-reverse.svg"
+          alt="graphic"
+          width="150"
+          height="165"
+          aria-hidden="true"
+        />
+      </div>
+      <div class="cs-wrapper">
+        <div class="cs-content">
+          <span class="cs-topper">Terapi Sürecimiz</span>
+          <h2 class="cs-title">Terapi Yolculuğunuzda Adım Adım Yanınızdayız</h2>
+          <p class="cs-text">
+            Terapi süreci, sizin ihtiyaçlarınıza göre şekillenir. İlk
+            görüşmemizden itibaren, kendinizi güvende ve desteklenmiş
+            hissedeceğiniz bir ortam yaratırız. Her adımda sizinle birlikteyiz.
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <span class="cs-number">01</span>
+            <div class="cs-flex">
+              <h3 class="cs-h3">İlk Görüşme</h3>
+              <p class="cs-item-text">
+                Sizi tanımak için bir araya geliyoruz. Endişelerinizi,
+                hedeflerinizi ve beklentilerinizi dinliyoruz. Bu görüşmede, size
+                en uygun terapi yöntemini birlikte belirliyoruz.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-number">02</span>
+            <div class="cs-flex">
+              <h3 class="cs-h3">Terapi Süreci</h3>
+              <p class="cs-item-text">
+                Düzenli seanslarla ilerleriz. Güvenli bir ortamda duygularınızı
+                keşfeder, düşünce kalıplarınızı inceler ve yeni başa çıkma
+                stratejileri geliştiririz. Her adımda yanınızdayız.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <span class="cs-number">03</span>
+            <div class="cs-flex">
+              <h3 class="cs-h3">İlerleme ve Değerlendirme</h3>
+              <p class="cs-item-text">
+                Katettiğiniz yolu birlikte değerlendiririz. Hedeflerinize ne
+                kadar yaklaştığınızı gözden geçirir, gerekirse planımızı
+                ayarlarız. Sürekli gelişiminiz için size destek oluruz.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a href="/iletisim" class="cs-button-solid">Ücretsiz İlk Görüşme &gt;</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                  Reviews                     -->
+  <!-- ============================================ -->
+
+  <section id="reviews-706">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Başarılarımız</span>
+        <h2 class="cs-title">
+          <span class="cs-color">%98</span> Danışan Memnuniyeti!
+        </h2>
+        <p class="cs-text">
+          Uzay Psikoloji'de terapi deneyimi yaşayan danışanlarımızın
+          paylaşımları. Gizlilik ilkemiz gereği, isimleri değiştirilmiştir.
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="/assets/images/happy-man.webp"
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="/assets/images/happy-man.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/happy-man.webp"
+              alt="person"
+              width="240"
+              height="286"
+            />
+          </picture>
+          <div class="cs-review">
+            <!--Quote Block-->
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpink-quote.svg"
+              alt="spidey sense graphic"
+              width="58"
+              height="48"
+              aria-hidden="true"
+            />
+            <p class="cs-item-text">
+              Uzay Psikoloji'ye geldiğimde kendimi çok çaresiz hissediyordum.
+              Dr. Ayşe'nin sıcak ve anlayışlı yaklaşımı sayesinde, hayata bakış
+              açım değişti. Artık kendimi daha iyi anlıyor ve sorunlarımla başa
+              çıkabiliyorum. Buraya geldiğim için çok mutluyum.
+            </p>
+            <span class="cs-name">Mehmet K.</span>
+            <span class="cs-job">Tasarımcı, 35</span>
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="/assets/images/couple.webp"
+            />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="/assets/images/couple.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/couple.webp"
+              alt="person"
+              width="240"
+              height="286"
+            />
+          </picture>
+          <div class="cs-review">
+            <!--Quote Block-->
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpink-quote.svg"
+              alt="spidey sense graphic"
+              width="58"
+              height="48"
+              aria-hidden="true"
+            />
+            <p class="cs-item-text">
+              Eşimle aramızdaki sorunlar nedeniyle çift terapisine başvurduk.
+              Terapistimiz Ahmet Bey, bize birbirimizi dinlemeyi ve anlamayı
+              öğretti. Bu süreç sayesinde sadece evliliğimizi kurtarmakla
+              kalmadık, daha mutlu ve güçlü bir çift olduk. Uzay Psikoloji'ye
+              minnettarız.
+            </p>
+            <span class="cs-name">Zeynep ve Ali Ç.</span>
+            <span class="cs-job">Restoran İşletmecileri, 35 ve 37</span>
+          </div>
+        </li>
+      </ul>
+      <a href="/degerlendirmeler" class="cs-button-solid"
+        >Tüm Değerlendirmelerimiz &gt;</a
+      >
+    </div>
+    <!--Ripple Graphic-->
+    <picture class="cs-waves">
+      <!--Mobile Image-->
       <source
-        media="(max-width: 600px)"
-        srcset="/assets/images/landing-m.webp"
+        media="(max-width: 1023px)"
+        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fripple3-m.svg"
       />
-      <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg" />
+      <!--Tablet and above Image-->
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fripple3.svg"
+      />
       <img
-        aria-hidden="true"
+        loading="lazy"
         decoding="async"
-        src="/assets/images/landing.jpg"
-        alt="new home"
-        width="2500"
-        height="1667"
-        loading="eager"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fripple3.svg"
+        alt="person"
+        width="566"
+        height="309"
       />
     </picture>
   </section>
 
-  <!-- ============================================ -->
-  <!--                  Services                    -->
-  <!-- ============================================ -->
-
-  <section id="services" class="services">
-    <!-- Get Icons From flaticon.com -->
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service1.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 1</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service2.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 2</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service3.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 3</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                 Side By Side                 -->
-  <!-- ============================================ -->
-
-  <section id="sbs">
-    <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
-      </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">About Us</span>
-        <h2 class="cs-title">About Company Title</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <div class="cs-flex-group">
-          <p class="cs-flex-p">
-            In consequat tincidunt turpis sit amet imperdiet. Praesent Classei
-            consequat tincidunt turpis sit amet imperdiet for mind.
-          </p>
-          <span class="cs-name">Justin Time</span>
-          <span class="cs-job">CEO-Founder</span>
-          <img
-            class="cs-quote-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-            alt="gavel"
-            width="136"
-            height="77"
-          />
-        </div>
-        <a href="/about" class="cs-button-solid">More About Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--            Extra Content To Rank             -->
-  <!-- ============================================ -->
-
-  <section id="sbs-r">
-    <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-      </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">SEO Ranking</span>
-        <h2 class="cs-title">Talk about a main service keyword</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <p class="cs-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur,
-          iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi
-          fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores
-          ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo
-          quia neque est quas, in placeat. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Doloribus modi laudantium voluptatibus
-          rem libero error minus quia eligendi sapiente eos.
-        </p>
-        <a href="/blog" class="cs-button-solid">Read our Blog</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                   Gallery                    -->
-  <!-- ============================================ -->
-
-  <section id="gallery">
-    <div class="cs-container">
-      <span class="cs-topper">Our Portfolio</span>
-      <h2 class="cs-title">
-        Et orci volutpat, back up generator installations
-      </h2>
-      <div class="cs-image-group">
-        <!-- Row 1-->
-        <div class="cs-row cs-row-1">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port1-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port1.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port1.jpg"
-              alt="new hallway"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port4-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port4.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port4.jpg"
-              alt="new home construction"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port7-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port7.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port7.jpg"
-              alt="building a new wall"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-        </div>
-        <!-- Row 2 -->
-        <div class="cs-row cs-row-2">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port2-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port2.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port2.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port5-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port5.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port5.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port8-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port8.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port8.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-        </div>
-        <!-- Row 3 -->
-        <div class="cs-row cs-row-3">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port3-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port3.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port3.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port6-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port6.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port6.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port9-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port9.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port9.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-        </div>
-      </div>
-      <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                   Reviews                    -->
-  <!-- ============================================ -->
-
-  <section id="reviews">
-    <div class="cs-container">
-      <span class="cs-topper">Our Reviews</span>
-      <h2 class="cs-title">Words From Our Customers</h2>
-      <p class="cs-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor
-        volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida
-        viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo,
-        ornare. Lorem ipsum dolor sit amet.
-      </p>
-      <ul class="cs-card-group">
-        <!-- Review 1 -->
-        <li class="cs-item">
-          <img
-            class="cs-item-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-            alt="profile picture"
-            width="80"
-            height="80"
-          />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
-            habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
-            ullamcorper lectus et. Auctor velit diam fermentum consequat.
-            Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-          </p>
-          <span class="cs-reviewer">
-            Jon Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
-          <img
-            class="cs-item-stars"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16"
-          />
-        </li>
-        <!-- Review 2 -->
-        <li class="cs-item">
-          <img
-            class="cs-item-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-            alt="profile picture"
-            width="80"
-            height="80"
-          />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
-            habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
-            ullamcorper lectus et. Auctor velit diam fermentum consequat.
-            Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-          </p>
-          <span class="cs-reviewer">
-            Jane Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
-          <img
-            class="cs-item-stars"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16"
-          />
-        </li>
-      </ul>
-      <a aria-label="read more reviews" href="/reviews" class="cs-button-solid"
-        >Our Reviews</a
-      >
-    </div>
-  </section>
-
   <CTA />
 </BaseLayout>
-
-<style lang="less">
-  /* STYLES FOR ABOVE THE FOLD */
-
-  /*-- -------------------------- -->
-<---           Hero             -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #hero {
-      font-family: "Roboto", "Arial", sans-serif;
-      /* Centers button */
-      text-align: center;
-      /* changes on tablet */
-      padding: 0 (16/16rem);
-      padding-bottom: (100/16rem);
-      position: relative;
-      z-index: 1;
-      /* prevents overflow from the lines extending past the screen width */
-      overflow: hidden;
-
-      .cs-picture {
-        /* Background Image */
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-
-        &:before {
-          /* Black Color Overlay */
-          content: "";
-          width: 100%;
-          height: 100%;
-          background: #000;
-          opacity: 0.7;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-          /* prevents the cursor from interacting with it */
-          pointer-events: none;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          /* Makes image act like a background-image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16em);
-        margin: auto;
-        /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-        /* 144px - 280px - leaving extra space for the navigation */
-        /* changes on tablet */
-        padding: clamp(9em, 25.95vw, 17.5em) 0;
-        position: relative;
-
-        &:before {
-          /* Left Line */
-          content: "";
-          width: 1px;
-          height: 100%;
-          background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-          ); /* FF3.6-15 */
-          background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-          ); /* Chrome10-25,Safari5.1-6 */
-          opacity: 1;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-flex-group {
-        width: 80vw;
-        /* 464px - 562px */
-        max-width: clamp(29em, 60vw, 35.125em);
-        margin: auto;
-        /* 60px - 220px */
-        margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-      }
-
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-        color: var(--primary);
-      }
-
-      .cs-title {
-        text-align: center;
-        width: 100%;
-        color: var(--bodyTextColorWhite);
-      }
-
-      .cs-text {
-        text-align: center;
-        /* 32px - 40px */
-        margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
-        /* 40px - 48px */
-        margin-bottom: clamp(2.5rem, 4vw, 3rem);
-        color: var(--bodyTextColorWhite);
-      }
-
-      .cs-button-solid {
-        line-height: clamp(2.875em, 5.5vw, 3.5em);
-        height: initial;
-        margin-bottom: calc(16 / 16 * 1rem);
-      }
-
-      .cs-button-transparent {
-        font-size: (16/16rem);
-        font-weight: 700;
-        /* 46px - 56px */
-        line-height: clamp(2.875em, 5.5vw, 3.5em);
-        text-decoration: none;
-        width: (180/16rem);
-        /* 46px - 56px */
-        height: clamp(2.875em, 5.5vw, 3.5em);
-        margin: 0 (8/16rem);
-        box-sizing: border-box;
-        padding: 0;
-        color: #fff;
-        background-color: transparent;
-        border: 1px solid var(--bodyTextColorWhite);
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-
-        &:before {
-          content: "";
-          background: #000;
-          opacity: 1;
-          display: block;
-          position: absolute;
-          /* so it sits on top of the border */
-          top: -1px;
-          right: -1px;
-          bottom: -1px;
-          left: -1px;
-          z-index: -1;
-          /* this is what creates the grow affect on hover */
-          transform: scaleX(0);
-          transition: transform 0.3s;
-          transform-origin: left;
-        }
-
-        &:hover {
-          &:before {
-            transform: scaleX(1);
-          }
-        }
-
-        .cs-img {
-          margin-right: (12/16rem);
-          display: block;
-        }
-      }
-    }
-  }
-
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48em) {
-    #hero {
-      /* 32px - 40px */
-      padding: 0 clamp(2em, 5vw, 2.5em);
-
-      .cs-container {
-        padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
-        &:after {
-          /* Right Line */
-          content: "";
-          width: 1px;
-          height: 100%;
-          background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0) 0%,
-            rgba(250, 251, 252, 0.5) 100%
-          ); /* FF3.6-15 */
-          background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0) 0%,
-            rgba(250, 251, 252, 0.5) 100%
-          ); /* Chrome10-25,Safari5.1-6 */
-          opacity: 1;
-          display: block;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-      }
-
-      .cs-button-solid {
-        margin-right: (20/16rem);
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  /* Desktop Parallax Effect - 1300px */
-  @media only screen and (min-width: 81.25em) {
-    #hero {
-      background: url("/assets/images/landing.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      /* creates parallax effect on background image */
-      background-attachment: fixed;
-    }
-  }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #hero {
-        .cs-background {
-          &:before {
-            opacity: 0.8;
-          }
-        }
-      }
-    }
-  }
-
-  /*-- -------------------------- -->
-<---          Services          -->
-<--- -------------------------- -*/
-
-  /* Mobile */
-  @media only screen and (min-width: 0em) {
-    .services {
-      width: 90%;
-      max-width: (1320/16em);
-      margin: auto;
-      margin-top: (-167/16em);
-      margin-bottom: (50/16em);
-      padding: (50/16em) (20/16em);
-      background: #fff;
-      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-      border-top: (6/16em) solid var(--primary);
-      border-radius: (5/16em);
-      position: relative;
-      z-index: 100;
-      .card {
-        width: 100%;
-        max-width: (357/16em);
-        margin: auto;
-        margin-bottom: (50/16em);
-        display: block;
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-
-        picture {
-          width: (88/16em);
-          height: (88/16em);
-          margin: auto;
-          margin-bottom: (23/16em);
-          background: var(--primary);
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          img {
-            width: (48/16em);
-            height: (48/16em);
-          }
-        }
-        h2 {
-          font-size: (32/16em);
-          font-weight: 700;
-          line-height: 27/20em;
-          text-align: center;
-          margin-bottom: 13/20em;
-          color: #1a1a1a;
-        }
-        p {
-          line-height: 24/18em;
-          text-align: center;
-          width: 100%;
-          opacity: 0.7;
-        }
-      }
-    }
-  }
-
-  /* Inbetween */
-  @media only screen and (min-width: 768px) {
-    .services {
-      font-size: ~"min(1.8vw, 1em)";
-      width: 98%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      .card {
-        max-width: (325/16em);
-        margin: 0;
-      }
-    }
-  }
-
-  /* Large Desktop */
-  @media only screen and (min-width: 1300px) {
-    .services {
-      padding: (50/16em) (80/16em);
-
-      .card {
-        max-width: (357/16em);
-      }
-    }
-  }
-
-  /* Dark mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #services {
-        background: var(--medium);
-
-        picture {
-          background: var(--primaryDark);
-        }
-
-        h2 {
-          font-weight: bold;
-          color: #fff;
-        }
-      }
-    }
-  }
-
-  /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
-
-  /*-- -------------------------- -->
-<---       Side By Side         -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs {
-      padding: var(--sectionPadding);
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16rem);
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: (40/16rem);
-      }
-
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        left: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-        right: 0;
-        bottom: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: left;
-        margin-bottom: (4/16rem);
-      }
-
-      .cs-title {
-        text-align: left;
-        max-width: (800/16rem);
-      }
-
-      .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
-        margin-bottom: (16/16rem);
-
-        &:last-of-type {
-          margin-bottom: (32/16rem);
-        }
-      }
-
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: #f7f7f7;
-        border-radius: (16/16rem);
-        position: relative;
-      }
-
-      .cs-flex-p {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0 0 (16/16rem);
-        color: #353535;
-      }
-
-      .cs-name {
-        font-size: (16/16rem);
-        font-weight: bold;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        margin: 0 0 (4/16rem);
-        color: var(--headerColor);
-        display: block;
-      }
-
-      .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #353535;
-        display: block;
-      }
-
-      .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
-      }
-
-      .cs-button-solid {
-        margin-top: (32/16rem);
-      }
-    }
-  }
-
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs {
-      .cs-container {
-        flex-flow: row;
-        justify-content: space-between;
-        gap: (52/16rem);
-      }
-
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
-        flex: none;
-      }
-
-      .cs-right {
-        margin: 0;
-      }
-    }
-  }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
-
-        .cs-picture2 {
-          background-color: var(--dark);
-          /* 6px - 12px */
-          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-        }
-
-        .cs-topper {
-          color: var(--primaryLight);
-        }
-
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
-        .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex-group {
-          background-color: var(--accent);
-        }
-
-        .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
-        }
-
-        .cs-quote-icon {
-          opacity: 0.2;
-        }
-      }
-    }
-  }
-
-  /*-- -------------------------- -->
-<---       Side By Side         -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs-r {
-      padding: var(--sectionPadding);
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16rem);
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: (40/16rem);
-      }
-
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        right: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-        bottom: 0;
-        left: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: left;
-        margin-bottom: (4/16rem);
-      }
-
-      .cs-title {
-        text-align: left;
-        max-width: (800/16rem);
-      }
-
-      .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
-        margin-bottom: (16/16rem);
-        &:last-of-type {
-          margin-bottom: (32/16rem);
-        }
-      }
-
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: #f7f7f7;
-        border-radius: (16/16rem);
-        position: relative;
-      }
-
-      .cs-flex-p {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0 0 (16/16rem);
-        color: #353535;
-      }
-
-      .cs-name {
-        font-size: (16/16rem);
-        font-weight: bold;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        margin: 0 0 (4/16rem);
-        color: var(--headerColor);
-        display: block;
-      }
-
-      .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #353535;
-        display: block;
-      }
-
-      .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
-      }
-    }
-  }
-
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs-r {
-      .cs-container {
-        flex-flow: row;
-        justify-content: space-between;
-        gap: (52/16rem);
-      }
-
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
-        /* sends it to the right */
-        order: 2;
-        flex: none;
-      }
-
-      .cs-right {
-        margin: 0;
-      }
-    }
-  }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs-r {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
-
-        .cs-picture2 {
-          background-color: var(--dark);
-          /* 6px - 12px */
-          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-        }
-
-        .cs-topper {
-          color: var(--primaryLight);
-        }
-
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
-        .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex-group {
-          background-color: var(--accent);
-        }
-
-        .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
-        }
-
-        .cs-quote-icon {
-          opacity: 0.2;
-        }
-      }
-    }
-  }
-
-  /*-- -------------------------- -->
-<---          Gallery           -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px - Contains hover animation */
-  @media only screen and (min-width: 0em) {
-    #gallery {
-      /* Centers button */
-      text-align: center;
-      padding: var(--sectionPadding);
-      position: relative;
-      /* Prevents overflow from the image going off screen */
-      overflow: hidden;
-      .cs-container {
-        width: 100%;
-        max-width: (1322/16em);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-      }
-
-      .cs-title {
-        text-align: center;
-        max-width: (621/16rem);
-        margin-bottom: (40/16rem);
-      }
-
-      .cs-image-group {
-        /* used rem so it doesn't scale with the font size of on parent */
-        font-size: ~"min(1.1vw, 1em)";
-        width: 100%;
-        max-width: (1322/16em);
-        margin: 0 auto (60/16rem);
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: (30/16em);
-      }
-
-      .cs-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: (30/16em);
-      }
-
-      .cs-picture {
-        display: block;
-        position: relative;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-row-1 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (567/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (512/16em);
-        }
-      }
-
-      .cs-row-2 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (492/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (517/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-      }
-
-      .cs-row-3 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (625/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (452/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-      }
-    }
-  }
-
-  /* Dark mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #gallery {
-        .cs-title {
-          color: var(--bodyTextColorWhite);
-        }
-      }
-    }
-  }
-
-  /*-- -------------------------- -->
-<---          Reviews           -->
-<--- -------------------------- -*/
-
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #reviews {
-      /* Centers the button */
-      text-align: center;
-      padding: var(--sectionPadding);
-
-      .cs-container {
-        width: 100%;
-        max-width: (1104/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-      }
-
-      .cs-title {
-        text-align: center;
-        max-width: (700/16rem);
-      }
-
-      .cs-text {
-        text-align: center;
-        max-width: (650/16rem);
-        /* 88px - 104px */
-        margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
-      }
-
-      .cs-card-group {
-        /* 48px - 64px */
-        margin: 0 auto clamp(3rem, 5vw, 4rem);
-        padding: 0;
-      }
-
-      .cs-item {
-        text-align: left;
-        list-style: none;
-        width: 100%;
-        max-width: (542/16rem);
-        margin: 0 auto (64/16rem);
-        /* Prevents padding from affecting height & width */
-        box-sizing: border-box;
-        /* Padding L & R - 16px - 32px */
-        padding: (60/16rem) clamp(1rem, 3.2vw, 2rem) 0;
-        /* 32px - 40px */
-        padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-        background: #fff;
-        box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-        border-radius: (4/16rem);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-
-      .cs-item-img {
-        width: (80/16rem);
-        height: (80/16rem);
-        position: absolute;
-        top: (-40/16rem);
-      }
-
-      .cs-item-p {
-        font-size: (16/16rem);
-        line-height: 1.5em;
-        margin: 0 0 (20/16rem);
-        padding-bottom: (20/16rem);
-        color: var(--bodyTextColor);
-        border-bottom: 1px solid #e8e9ec;
-      }
-
-      .cs-reviewer {
-        font-size: (16/16rem);
-        font-weight: 700;
-        line-height: 1.5em;
-        width: 40%;
-        margin: 0 auto 0 0;
-        color: var(--headerColor);
-        display: block;
-      }
-
-      .cs-desc {
-        font-size: (14/16rem);
-        font-weight: 400;
-        color: var(#353535);
-        display: block;
-      }
-
-      .cs-item-stars {
-        width: (96/16rem);
-        height: (16/16rem);
-      }
-    }
-  }
-
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48em) {
-    #reviews {
-      .cs-card-group {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: (16/16rem);
-      }
-
-      .cs-item {
-        /* reset margin so it won't interfere with flexbox */
-        margin: 0;
-      }
-    }
-  }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #reviews {
-        .cs-title,
-        .cs-text,
-        .cs-item-p,
-        .cs-reviewer {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-item {
-          background: var(--medium);
-        }
-
-        .cs-desc {
-          color: var(--primaryLight);
-        }
-      }
-    }
-  }
-</style>
