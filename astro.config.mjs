@@ -18,7 +18,7 @@ export default defineConfig({
             name: "blog",
             label: "Blog",
             folder: "src/content/blog",
-            slug: "{{slug}}",
+            slug: "{{fields.slug}}",
             create: true,
             fields: [
               { label: "Slug", name: "slug", widget: "string" },
