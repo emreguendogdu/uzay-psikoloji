@@ -8,7 +8,7 @@ import "@styles/blog.less"
 export async function getStaticPaths() {
   const posts = await getCollection("blog")
   return posts.map((entry) => ({
-    params: { post: entry.slug },
+    params: { post: entry.data.slug },
     props: { post: entry },
   }))
 }

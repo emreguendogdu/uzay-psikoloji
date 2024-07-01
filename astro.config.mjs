@@ -22,10 +22,10 @@ export default defineConfig({
             slug: "{{slug}}",
             fields: [
               {
-                label: "URL Slug",
-                name: "url",
+                label: "Slug",
+                name: "slug",
                 widget: "string",
-                hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+                hint: "The URL path for this post, e.g. /blog/my-new-post",
               },
               { label: "Title", name: "title", widget: "string" },
               { label: "Description", name: "description", widget: "string" },
