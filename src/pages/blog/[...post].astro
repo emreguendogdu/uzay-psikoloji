@@ -1,21 +1,21 @@
 ---
-import { getCollection } from "astro:content";
-import BaseLayout from "src/layouts/BaseLayout.astro";
-import { formatDate } from "@js/util.js";
-import FeaturedPost from "@components/FeaturedPost.astro";
-import "@styles/blog.less";
+import { getCollection } from "astro:content"
+import BaseLayout from "src/layouts/BaseLayout.astro"
+import { formatDate } from "@js/util.js"
+import FeaturedPost from "@components/FeaturedPost.astro"
+import "@styles/blog.less"
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const posts = await getCollection("blog")
   return posts.map((entry) => ({
     params: { post: entry.slug },
     props: { post: entry },
-  }));
+  }))
 }
 
-const { post } = Astro.props;
-const { title, date, description, image, imageAlt, author } = post.data;
-const { Content } = await post.render();
+const { post } = Astro.props
+const { title, date, description, image, imageAlt, author } = post.data
+const { Content } = await post.render()
 ---
 
 <BaseLayout {title} {description}>
@@ -27,17 +27,17 @@ const { Content } = await post.render();
     <picture>
       <source
         media="(max-width: 600px)"
-        srcset="/assets/images/cabinets2-m.jpg"
+        srcset="/assets/images/self-discovery.webp"
       />
       <source
         media="(min-width: 601px)"
-        srcset="/assets/images/cabinets2.jpg"
+        srcset="/assets/images/self-discovery.webp"
       />
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/cabinets2.jpg"
-        alt="kitchen cabinets"
+        src="/assets/images/self-discovery.webp"
+        alt="Marcus Aurelius büstü, giriş görseli"
         loading="eager"
         width="2500"
         height="1667"

@@ -1,15 +1,15 @@
 ---
-import BaseLayout from "src/layouts/BaseLayout.astro";
-import CTA from "@components/CTA.astro";
-import { getCollection } from "astro:content";
-import { formatDate } from "@js/util.js";
-import FeaturedPost from "@components/FeaturedPost.astro";
-import "@styles/blog.less";
+import BaseLayout from "src/layouts/BaseLayout.astro"
+import CTA from "@components/CTA.astro"
+import { getCollection } from "astro:content"
+import { formatDate } from "@js/util.js"
+import FeaturedPost from "@components/FeaturedPost.astro"
+import "@styles/blog.less"
 
-const posts = await getCollection("blog");
+const posts = await getCollection("blog")
 posts.sort(
   (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
-);
+)
 ---
 
 <BaseLayout
@@ -26,17 +26,17 @@ posts.sort(
     <picture>
       <source
         media="(max-width: 600px)"
-        srcset="/assets/images/cabinets2-m.jpg"
+        srcset="/assets/images/self-discovery.webp"
       />
       <source
         media="(min-width: 601px)"
-        srcset="/assets/images/cabinets2.jpg"
+        srcset="/assets/images/self-discovery.webp"
       />
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/cabinets2.jpg"
-        alt="kitchen cabinets"
+        src="/assets/images/self-discovery.webp"
+        alt="Marcus Aurelius büstü, giriş görseli"
         loading="eager"
         width="2500"
         height="1667"
@@ -54,7 +54,7 @@ posts.sort(
       <!-- ============================================ -->
       <!--                 Blog Articles                -->
       <!-- ============================================ -->
-      {posts.length === 0 && <h1>No Recent Posts</h1>}
+      {posts.length === 0 && <h1>Blog bulunamadı.</h1>}
       {
         posts.length >= 1 &&
           posts.map((post) => (
@@ -87,7 +87,7 @@ posts.sort(
                 <h2 class="blog-h1">{post.data.title}</h2>
                 <p class="blog-desc">{post.data.description}</p>
                 <a href={post.slug} class="blog-link">
-                  Continue Reading
+                  Devamını Oku &gt;
                 </a>
               </div>
             </article>
