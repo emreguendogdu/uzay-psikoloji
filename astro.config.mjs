@@ -1,5 +1,5 @@
-import { defineConfig } from "astro/config";
-import NetlifyCMS from "astro-netlify-cms";
+import { defineConfig } from "astro/config"
+import NetlifyCMS from "astro-netlify-cms"
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,8 +18,10 @@ export default defineConfig({
             name: "blog",
             label: "Blog",
             folder: "src/content/blog",
+            slug: "{{slug}}",
             create: true,
             fields: [
+              { label: "Slug", name: "slug", widget: "string" },
               { label: "Title", name: "title", widget: "string" },
               { label: "Description", name: "description", widget: "string" },
               { label: "Author", name: "author", widget: "string" },
@@ -39,4 +41,4 @@ export default defineConfig({
       },
     }),
   ],
-});
+})
