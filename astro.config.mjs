@@ -18,10 +18,15 @@ export default defineConfig({
             name: "blog",
             label: "Blog",
             folder: "src/content/blog",
-            slug: "{{fields.slug}}",
             create: true,
+            slug: "{{slug}}",
             fields: [
-              { label: "Slug", name: "slug", widget: "string" },
+              {
+                label: "URL Slug",
+                name: "url",
+                widget: "string",
+                hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+              },
               { label: "Title", name: "title", widget: "string" },
               { label: "Description", name: "description", widget: "string" },
               { label: "Author", name: "author", widget: "string" },
