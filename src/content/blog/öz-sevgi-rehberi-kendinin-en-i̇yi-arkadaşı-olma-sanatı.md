@@ -4,7 +4,7 @@ description: Kendinizle dost olmak, özgüveninizi artırır ve daha mutlu bir y
   sürmenizi sağlar. Öz-sevgi geliştirme, iç sesinizi yönetme ve kendinizle
   barışık olma teknikleri için rehberimizi okuyun.
 author: Emre Gündoğdu
-date: 2024-06-30T19:53:24.094Z
+date: 2024-07-01T16:25:42.571Z
 tags:
   - öz-sevgi
   - kendine güven
