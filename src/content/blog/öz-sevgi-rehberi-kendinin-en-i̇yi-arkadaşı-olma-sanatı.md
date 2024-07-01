@@ -1,4 +1,5 @@
 ---
+slug: oz-sevgi-rehberi
 title: "Öz-Sevgi Rehberi: Kendinin En İyi Arkadaşı Olma Sanatı"
 description: Kendinizle dost olmak, özgüveninizi artırır ve daha mutlu bir yaşam
   sürmenizi sağlar. Öz-sevgi geliştirme, iç sesinizi yönetme ve kendinizle
