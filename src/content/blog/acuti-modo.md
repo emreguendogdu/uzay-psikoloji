@@ -37,7 +37,7 @@ Kendimizle kurduğumuz ilişki, hayatımızdaki en uzun ve en önemli ilişkidir
 
 İlk adım, içimizdeki eleştirel sesi fark etmektir. Bu ses genellikle geçmiş deneyimlerimizden, toplumsal beklentilerden ve korkularımızdan beslenir.
 
-H3: Egzersiz: İç Sesinizi Dinleyin
+**Egzersiz: İç Sesinizi Dinleyin**
 
 * Bir gün boyunca, kendinize yönelik düşüncelerinizi not edin.
 * Bu düşüncelerin ne kadar destekleyici veya eleştirel olduğunu değerlendirin.
@@ -47,7 +47,7 @@ H3: Egzersiz: İç Sesinizi Dinleyin
 
 En yakın arkadaşınıza nasıl davranıyorsanız, kendinize de öyle davranmayı öğrenin.
 
-H3: Kendimizle Nazik Konuşma Pratiği
+**Kendimizle Nazik Konuşma Pratiği**
 
 * Eleştirel bir düşünce fark ettiğinizde, durun.
 * Kendinize sorun: "En yakın arkadaşıma bu durumda ne söylerdim?"
@@ -59,7 +59,7 @@ Bir danışanım, iş yerinde bir hata yaptığında kendine çok sert davranıy
 
 Öz-şefkat, kendimize karşı nazik ve anlayışlı olmayı içerir.
 
-H3: Öz-şefkat Meditasyonu
+**Öz-şefkat Meditasyonu**
 
 1. Rahat bir pozisyonda oturun.
 2. Elinizi kalbinizin üzerine koyun.
@@ -73,7 +73,7 @@ H3: Öz-şefkat Meditasyonu
 
 Çoğu zaman kusurlarımıza odaklanırız, ancak güçlü yönlerimizi takdir etmek önemlidir.
 
-H3: Güç Günlüğü Tutmak
+**Güç Günlüğü Tutmak**
 
 * Her gün üç güçlü yönünüzü veya başarınızı not edin.
 * Bu özelliklerin veya başarıların hayatınıza nasıl katkıda bulunduğunu düşünün.
@@ -82,7 +82,7 @@ H3: Güç Günlüğü Tutmak
 
 Kendimizin en iyi arkadaşı olmak, aynı zamanda kendimizi korumayı da içerir.
 
-H3: Sağlıklı Sınırlar Koyma Adımları
+**Sağlıklı Sınırlar Koyma Adımları**
 
 1. İhtiyaçlarınızı ve değerlerinizi belirleyin.
 2. Bu ihtiyaçları ve değerleri net bir şekilde ifade edin.
@@ -93,7 +93,7 @@ H3: Sağlıklı Sınırlar Koyma Adımları
 
 Kendimizle kaliteli zaman geçirmek, kendimizi daha iyi tanımamıza ve sevmemize yardımcı olur.
 
-H3: Kendinizle Randevu
+**Kendinizle Randevu**
 
 * Haftada bir kez kendinizle "randevu" ayarlayın.
 * Bu zamanı sevdiğiniz bir aktiviteye ayırın: kitap okuma, yürüyüş yapma, sanat etkinliği vb.
@@ -103,7 +103,7 @@ H3: Kendinizle Randevu
 
 Kendimizi affetmek, en zor ama en önemli adımlardan biridir.
 
-H3: Kendini Affetme Ritüeli
+**Kendini Affetme Ritüeli**
 
 1. Geçmişteki bir hata veya pişmanlığınızı düşünün.
 2. Bu deneyimden ne öğrendiğinizi yazın.
