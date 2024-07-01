@@ -1,4 +1,5 @@
 ---
+slug: cocuklarda-ekran-bagimliligi-belirtiler-ve-cozum-yontemleri
 title: "Çocuklarda Ekran Bağımlılığı: Belirtiler ve Çözüm Yöntemleri | Uzay Psikoloji"
 description: Çocuğunuzun ekran bağımlılığı ile nasıl baş edebileceğinizi
   öğrenin. Uzman önerileri, yaş gruplarına göre ekran süresi limitleri ve
@@ -14,8 +15,6 @@ tags:
 image: /assets/images/blog/phone-addiction.webp
 imageAlt: Konuşma sırasında telefonuna bakan bir çocuk
 ---
-# Çocuklarda Ekran Bağımlılığı: Belirtiler ve Çözüm Yöntemleri
-
 Sevgili ebeveynler, bugün hepimizin yakından tanıdığı bir konuyu ele alacağız: çocuklarımızın ekran kullanımı. Teknolojinin hayatımızın vazgeçilmez bir parçası haline geldiği bu çağda, çocuklarımızın ekran başında geçirdiği zaman bizleri endişelendiriyor olabilir. Bu yazıda, ekran bağımlılığının ne olduğunu, olası etkilerini ve bununla nasıl baş edebileceğimizi konuşacağız.
 
 ## Ekran Bağımlılığı Nedir?
