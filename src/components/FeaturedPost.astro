@@ -10,6 +10,9 @@ const featuredPosts = posts.filter((post) =>
 ---
 
 <!-- ============================================ --><!--                Featured Posts                --><!-- ============================================ -->
+ {
+  featuredPosts.length > 0 ?
+ 
 <div class="blog-sidebar">
   <!--Featured-->
   <div class="blog-featured-group">
@@ -35,3 +38,5 @@ const featuredPosts = posts.filter((post) =>
     }
   </div>
 </div>
+: ""
+}
