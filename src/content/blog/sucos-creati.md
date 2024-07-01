@@ -1,5 +1,5 @@
 ---
-slug: cocuklarda-ekran-bagimliligi-belirtiler-ve-cozum-yontemleri
+slug: cocuklarda-ekran-bagimliligi-belirtileri-ve-cozum-yontemleri
 title: "Çocuklarda Ekran Bağımlılığı: Belirtiler ve Çözüm Yöntemleri | Uzay Psikoloji"
 description: Çocuğunuzun ekran bağımlılığı ile nasıl baş edebileceğinizi
   öğrenin. Uzman önerileri, yaş gruplarına göre ekran süresi limitleri ve
