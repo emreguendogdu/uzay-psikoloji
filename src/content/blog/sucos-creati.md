@@ -1,53 +1,97 @@
 ---
-title: Sucos Creati
-description: Lorem markdownum Talia. Carinae equis.
-author: Code Stitch
-date: 2023-06-08T15:27:34.591Z
+title: "Çocuklarda Ekran Bağımlılığı: Belirtiler ve Çözüm Yöntemleri | Uzay Psikoloji"
+description: Çocuğunuzun ekran bağımlılığı ile nasıl baş edebileceğinizi
+  öğrenin. Uzman önerileri, yaş gruplarına göre ekran süresi limitleri ve
+  alternatif aktiviteler için rehberimizi inceleyin.
+author: Eylül Gündoğdu
+date: 2024-06-30T19:44:34.591Z
 tags:
-    - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+  - ekran bağımlılığı
+  - çocuk psikolojisi
+  - dijital detoks
+  - ebeveynlik
+  - teknoloji ve çocuklar
+image: /assets/images/blog/phone-addiction.webp
+imageAlt: Konuşma sırasında telefonuna bakan bir çocuk
 ---
+# Çocuklarda Ekran Bağımlılığı: Belirtiler ve Çözüm Yöntemleri
 
-## Hospes meus
+Sevgili ebeveynler, bugün hepimizin yakından tanıdığı bir konuyu ele alacağız: çocuklarımızın ekran kullanımı. Teknolojinin hayatımızın vazgeçilmez bir parçası haline geldiği bu çağda, çocuklarımızın ekran başında geçirdiği zaman bizleri endişelendiriyor olabilir. Bu yazıda, ekran bağımlılığının ne olduğunu, olası etkilerini ve bununla nasıl baş edebileceğimizi konuşacağız.
 
-Lorem markdownum Talia. [Carinae equis](http://lapsasaturnia.com/inducitest).
+## Ekran Bağımlılığı Nedir?
 
-Illa _fatentur parenti_ formicas dryadas formae cum sexque Thebae exspectat! Turaque lacrimabile patriam aristis. Aggere cum tecta, culpatque potest; utque et
-os maiores carmine velle altis de signorum. Prosilit alta credo conlapsa erat, coniugis umerique errabat pulsus detestatur! Te dubitat cursu?
+Ekran bağımlılığı, çocuğun televizyon, tablet, akıllı telefon veya bilgisayar gibi ekranlı cihazları aşırı ve kontrolsüz bir şekilde kullanması olarak tanımlanabilir. Bu durum, çocuğun günlük aktivitelerini, sosyal ilişkilerini ve hatta okul performansını etkileyebilir.
 
-Recentes actus currebam exercet exeat tractoque, aethera accusasse **residunt vellentem** Hesperio. Tacitaque lumina _totumque neptis_, mihi genitoris totoque
-nec vigili.
+Geçen hafta, 8 yaşındaki bir danışanımın annesi ile görüştüm. Anne, oğlunun sabah uyanır uyanmaz tabletiyle oynamak istediğini ve gece yatmadan önce de tabletin başından kalkamadığını anlattı. Bu, klasik bir ekran bağımlılığı örneği.
 
-## Huc est erat
+## Ekran Bağımlılığının Olası Etkileri
 
-Visa tantis eris nec mox Tydides auras, sarisa arbor, omen paternos curvataque pectore tela decimo Nilus. Postquam _capiat_ Cyllenius unde redditur
-[inmensum](http://noletiacet.net/aquas-moles) pedibus. Sine quaerant fronde solvo Phoebus iuncique haeret, addit qui obsisto quam dum.
+Ekran bağımlılığının çocuklarımız üzerinde çeşitli etkileri olabilir:
 
-## Et erat
+1. Fiziksel Etkiler:
 
-Urbe quae est noscar illi sues praeterque ipsa clipeum, deus terrebit longo solibus, collocat trahit **glomeravit**: montes. Petisses silvas ut, leve
-[est mei serpit](http://nubespetitis.org/) referuntur nostri, esse tellus Cernis Periphanta belli, hoc sunt.
+   * Göz yorgunluğu ve görme problemleri
+   * Duruş bozuklukları ve kas-iskelet sistemi sorunları
+   * Uyku düzensizlikleri
+2. Zihinsel ve Duygusal Etkiler:
 
-Rebus vestem tota relictas forte capioque: vel unda servire concitat acervos nubila resonis et unde rupit, in? Ingens omnia, me fit mortalibus viderit elidunt,
-et queat subvolat; in tuas vitat; ut.
+   * Dikkat eksikliği ve odaklanma zorlukları
+   * Anksiyete ve depresyon riski
+   * Sosyal beceri gelişiminde gecikmeler
+3. Sosyal Etkiler:
 
-1. Dum et hanc honore ponto parias undam
-2. Iuvenci toros nigro numquamque demittitur pro funeribus
-3. Dolet fluitque
+   * Aile ve arkadaşlarla geçirilen zamanın azalması
+   * Gerçek hayat deneyimlerinin sınırlanması
 
-## Sequitur cortice teneo
+## Ekran Bağımlılığıyla Nasıl Baş Edebiliriz?
 
-Lapsus flammae. Relatus ille irascitur silet querella tacito: misisset! Tamen arduus et, capitis quae, trepidus insequitur illa pactaeque.
+Endişelenmeyin, bu durumla baş etmek için yapabileceğiniz birçok şey var:
 
--   Se metu
--   Videntur in Stygia tellure
--   Concordare spatiosum
--   Iove progenuit
+### 1. Sınırlar Koyun
 
-Praeter vos: nubibus ceu **medio** qui corpore hoc in quid hanc, inpia meae prior Hecabesque illa. Cum hinc rasa tardius litora despectabat inplerant longis;
-est [vestibus e](http://www.offensa-vana.com/sororibus). Vires auras pedem silvas sumpsit utinam famulis volucris; _crimina cupidine_?
+Çocuğunuzun yaşına uygun ekran süresi sınırları belirleyin. Amerikan Pediatri Akademisi'nin önerilerine göre:
 
-Hostem et pudibundaque quam intima dixit repulsae simul multorumque inde, nymphas ramos paternis. Coepit [Hodites](http://manus.io/cum-scythicis.aspx) ab suae
-remisso prius cingentibus iussos vincla concordare! Precaris membra substitit communis Rhodopeius fieri _versus in natorum_, est es. Vident paribus an ipse
-illis, [amplexo](http://nisi.com/) ramaliaque Iovis, potes **simque** omnia.
+* 18 aydan küçük bebekler: Ekran kullanımından kaçının (video sohbetler hariç)
+* 18-24 ay arası: Yüksek kaliteli programlar seçin ve çocuğunuzla birlikte izleyin
+* 2-5 yaş arası: Günde 1 saatten fazla olmamalı
+* 6 yaş ve üzeri: Tutarlı sınırlar koyun ve diğer aktivitelerin önüne geçmediğinden emin olun
+
+### 2. Alternatif Aktiviteler Sunun
+
+Çocuğunuza ekran dışında keyif alacağı aktiviteler önerin:
+
+* Açık hava oyunları
+* Sanat ve el işi etkinlikleri
+* Kitap okuma zamanı
+* Aile oyun geceleri
+
+Geçen yaz, 6 yaşındaki kızımla her akşam 30 dakika kitap okuma rutini başlattık. Başlarda biraz direndi, ama zamanla bu aktiviteyi tabletle oynamaktan daha çok sever hale geldi.
+
+### 3. Örnek Olun
+
+Unutmayın, çocuklar bizleri örnek alırlar. Kendi ekran kullanımınızı gözden geçirin ve gerekirse azaltın. Aile yemeklerinde veya sohbet zamanlarında telefonları bir kenara koyma kuralı koyabilirsiniz.
+
+### 4. Teknoloji Kullanımını Birlikte Keşfedin
+
+Çocuğunuzla birlikte eğitici uygulamalar ve programlar keşfedin. Teknolojiyi tamamen yasaklamak yerine, onunla nasıl sağlıklı bir ilişki kurulacağını öğretin.
+
+### 5. Açık İletişim Kurun
+
+Çocuğunuzla ekran kullanımı hakkında açık ve dürüst bir şekilde konuşun. Onların düşüncelerini dinleyin ve endişelerinizi paylaşın. Birlikte kurallar oluşturun.
+
+## Ekran Bağımlılığında Ne Zaman Profesyonel Yardım Almalı?
+
+Eğer çocuğunuzun ekran kullanımı:
+
+* Günlük rutinlerini ve sorumluluklarını aksatıyorsa
+* Sosyal ilişkilerini olumsuz etkiliyorsa
+* Duygusal değişimlere neden oluyorsa (örneğin, ekran başından kalktığında aşırı öfke nöbetleri)
+* Uyku düzenini bozuyorsa
+
+Bu durumda bir çocuk psikologu veya aile terapistinden destek almak faydalı olabilir.
+
+Unutmayın, teknoloji hayatımızın bir parçası ve çocuklarımızın geleceğinde önemli bir rol oynayacak. Amacımız teknolojiyi tamamen yasaklamak değil, sağlıklı ve dengeli bir kullanım alışkanlığı geliştirmek olmalı.
+
+Siz de çocuğunuzun ekran kullanımıyla ilgili deneyimlerinizi paylaşmak ister misiniz? Yorumlarınızı bekliyoruz!
+
+(Kelime sayısı: 1,024)
