@@ -89,7 +89,7 @@
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg"
+              src="/assets/svgs/google.svg"
               alt="google"
               width="11"
               height="11"
@@ -101,7 +101,7 @@
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg"
+              src="/assets/svgs/facebook.svg"
               alt="facebook"
               width="6"
               height="11"
@@ -117,7 +117,7 @@
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg"
+              src="/assets/svgs/instagram.svg"
               alt="instagram"
               width="11"
               height="11"
@@ -127,7 +127,9 @@
       </li>
     </ul>
     <div class="credit">
-      <a href="https://osmangund.tech/ajans" class="credit-link">Osman Emre Gundogdu</a> ® 2024
+      <a href="https://osmangund.tech/ajans" class="credit-link"
+        >Osman Emre Gundogdu</a
+      > ® 2024
     </div>
   </div>
 </footer>
@@ -302,10 +304,11 @@
         height: (13/16rem);
         width: auto;
         display: block;
+        filter: invert(1);
       }
 
       .credit-link {
-        color:var(--secondary);
+        color: var(--secondary);
         text-decoration: none;
       }
     }
