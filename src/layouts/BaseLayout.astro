@@ -23,8 +23,15 @@ const {description, title, preloadImg = ""} = Astro.props;
             <meta property="og:description" content={description} />
             <meta property="og:type" content="website" />
             <meta property="og:url" content={`https://${client.domain}${Astro.url.pathname}`} />
-            <meta property="og:image" content="/assets/images/logo-small.png" />
-            <meta property="og:image:secure_url" content="/assets/images/logo-small.png" />
+            
+                <!-- Og Image -->
+    <meta property="og:image" content={`/assets/images/og-logo-m.webp`} />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+    <meta property="twitter:image" content={`/assets/images/og-logo-m.webp`} />
+    <meta property="twitter:image:width" content="600" />
+    <meta property="twitter:image:height" content="315" />
+    
     
             <!--Favicons-->
             <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
