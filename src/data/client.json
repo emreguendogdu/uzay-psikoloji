@@ -3,6 +3,7 @@
 	"email": "hello@osmangund.tech",
 	"phoneForTel": "555-779-4407",
 	"phoneFormatted": "(555) 779-4407",
+	"foundationDate": "2004",
 	"address": {
 		"lineOne": "First Address Line",
 		"lineTwo": "Second Address Line",

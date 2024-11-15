@@ -1,5 +1,5 @@
 ---
-
+import client from "@data/client.json"
 ---
 
 <!-- ============================================ --><!--                   Footer                     --><!-- ============================================ -->
@@ -20,12 +20,12 @@
         />
       </a>
       <p class="cs-text">
-        Uzay Psikoloji ailesi olarak 20 yılı aşkın süredir Denizli'de sizlere
-        hizmet vermekten mutluluk duyuyoruz. Bireysel, çift, aile ve çocuk
-        terapisi alanlarında uzman kadromuzla, sizin ve sevdiklerinizin
-        yanındayız. Sıcak, anlayışlı ve güvenilir yaklaşımımızla, hayatınıza
-        pozitif bir dokunuş yapmak için buradayız. Çünkü sizin mutluluğunuz,
-        bizim de mutluluğumuz.
+        {client.name} ailesi olarak yılların getirdiği tecrübeyle ${
+          client.address.city
+        } ilinde sizlere hizmet vermekten mutluluk duyuyoruz. Bireysel, çift, aile
+        ve çocuk terapisi alanlarında uzman kadromuzla, sizin ve sevdiklerinizin
+        yanındayız. Sıcak, anlayışlı ve güvenilir yaklaşımımızla, hayatınıza pozitif
+        bir dokunuş yapmak için buradayız. Çünkü sizin mutluluğunuz, bizim de mutluluğumuz.
       </p>
     </div>
     <!-- Links -->
@@ -127,9 +127,7 @@
       </li>
     </ul>
     <div class="credit">
-      <a href="https://laodikyaweb.com" class="credit-link"
-        >Laodikya Web</a
-      > ® 2024
+      <a href="https://laodikyaweb.com" class="credit-link">Laodikya Web</a> ® 2024
     </div>
   </div>
 </footer>
@@ -312,7 +310,6 @@
         text-decoration: none;
         &:hover {
           text-decoration: underline;
-        
         }
       }
     }

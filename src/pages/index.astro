@@ -2,11 +2,14 @@
 import BaseLayout from "src/layouts/BaseLayout.astro"
 import CTA from "@components/CTA.astro"
 import "@styles/index.less"
+import client from "@data/client.json"
 ---
 
 <BaseLayout
-  title="Uzay Psikoloji | Denizli Psikolog | Terapi | Danışmanlık"
-  description="Uzay Psikoloji: Denizli'de 20 yıllık deneyimle bireysel, çift, aile ve çocuk terapisi hizmetleri. Uzman kadromuzla ruh sağlığınız için yanınızdayız. Mutlu bir yaşam için ilk adımı atın."
+  title=`${client.name} | ${client.address.city} Psikolog | Terapi | Danışmanlık`
+  `
+  description=`${client.address.city} ilinde bireysel, çift, aile ve çocuk terapisi hizmetleri. Uzman kadromuzla ruh sağlığınız için yanınızdayız. Mutlu bir yaşam için ilk adımı atın.`
+  `
   preloadImg="/assets/images/consultant.webp"
 >
   <!-- ============================================ -->
@@ -16,14 +19,14 @@ import "@styles/index.less"
   <section id="hero-1203">
     <div class="cs-container">
       <div class="cs-content">
-        <span class="cs-topper">Uzay Psikoloji</span>
+        <span class="cs-topper">${client.name}</span>
         <h1 class="cs-title">
           Ruhunuzun Mimarı: Bizimle İç Dünyanızı Keşfedin
         </h1>
         <p class="cs-text">
-          Uzay Psikoloji ile Denizli psikolog danışmanlığımızla duygusal ve
-          zihinsel sağlığınızı güçlendirin. 20 yılı aşkın deneyimimizle size
-          özel çözümler sunuyoruz.
+          ${client.name} ile ${client.address.city} psikolog danışmanlığımızla duygusal
+          ve zihinsel sağlığınızı güçlendirin. Deneyimli ekibimiz ve tecrübemizle
+          size özel çözümler sunuyoruz.
         </p>
         <a href="/iletisim" class="cs-button-solid">Ücretsiz İlk Seans &gt;</a>
       </div>
@@ -41,7 +44,8 @@ import "@styles/index.less"
           aria-hidden="true"
           decoding="async"
           src="/assets/images/consultant.webp"
-          alt="Uzay Psikoloji danışmanı"
+          alt=`${client.name} danışmanı`
+          `
           width="886"
           height="842"
         />
@@ -219,7 +223,7 @@ import "@styles/index.less"
             loading="lazy"
             decoding="async"
             src="/assets/images/consultancy.webp"
-            alt="Uzay Psikolojik Danışmanlık Denizli"
+            alt=`${client.name} ${client.address.city} psikolojik danışmanlık`
             width="324"
             height="467"
           />
@@ -285,11 +289,13 @@ import "@styles/index.less"
       <div class="cs-content">
         <div class="cs-flex">
           <span class="cs-topper">Hakkımızda</span>
-          <h2 class="cs-title">20 Yıllık Deneyim, Binlerce Mutlu Danışan</h2>
+          <h2 class="cs-title">Deneyimli Ekip, Binlerce Mutlu Danışan</h2>
         </div>
         <p class="cs-text-large">
-          Uzay Psikoloji, 2004 yılından beri Denizli'de hizmet veren, ruhunuzu
-          ve evinizi güçlendiren bir danışmanlık merkezidir.
+          ${client.name}, ${client.foundationDate} yılından beri ${
+            client.address.city
+          } ilinde hizmet veren, ruhunuzu ve evinizi güçlendiren bir danışmanlık
+          merkezidir.
         </p>
         <p class="cs-text">
           Kuruluşumuzdan bu yana, ruh sağlığı alanında en güncel ve etkili
@@ -306,12 +312,11 @@ import "@styles/index.less"
           nedenlerini de ele alıyoruz.
         </p>
         <p class="cs-text">
-          Uzay Psikoloji olarak, sürekli kendimizi geliştirmeye ve alanımızdaki
-          en son gelişmeleri takip etmeye önem veriyoruz. Düzenli olarak ulusal
-          ve uluslararası konferanslara katılıyor, mesleki eğitimlerimizi
-          güncelliyoruz. Amacımız, Denizli ve çevresindeki bireylere en kaliteli
-          ve etkili ruh sağlığı hizmetini sunmak, toplum sağlığına katkıda
-          bulunmaktır.
+          ${client.name} olarak, sürekli kendimizi geliştirmeye ve alanımızdaki en
+          son gelişmeleri takip etmeye önem veriyoruz. Düzenli olarak ulusal ve uluslararası
+          konferanslara katılıyor, mesleki eğitimlerimizi güncelliyoruz. Amacımız,
+          ${client.address.city} ve çevresindeki bireylere en kaliteli ve etkili
+          ruh sağlığı hizmetini sunmak, toplum sağlığına katkıda bulunmaktır.
         </p>
         <a href="/hakkimizda" class="cs-button-solid">Daha Fazla Öğren &gt;</a>
       </div>
@@ -413,9 +418,9 @@ import "@styles/index.less"
         <span class="cs-topper">Sizin İçin Yazdık</span>
         <h2 class="cs-title">Ruh Sağlığınız İçin Faydalı Bilgiler</h2>
         <p class="cs-text">
-          Uzay Psikoloji blogumuzda, sizin için faydalı olacağını düşündüğümüz
-          konuları ele alıyoruz. Uzmanlarımızın hazırladığı yazılarla, kendinizi
-          ve sevdiklerinizi daha iyi anlamanıza yardımcı olmak istiyoruz.
+          ${client.name} blogumuzda, sizin için faydalı olacağını düşündüğümüz konuları
+          ele alıyoruz. Uzmanlarımızın hazırladığı yazılarla, kendinizi ve sevdiklerinizi
+          daha iyi anlamanıza yardımcı olmak istiyoruz.
         </p>
       </div>
       <ul class="cs-card-group">
@@ -695,7 +700,7 @@ import "@styles/index.less"
             loading="lazy"
             decoding="async"
             src="/assets/images/female-happy.webp"
-            alt="Uzay Psikoloji mutlu danışan"
+            alt=`${client.name} mutlu danışan`
             width="386"
             height="521"
             aria-hidden="true"
@@ -856,8 +861,8 @@ import "@styles/index.less"
           <span class="cs-color">%98</span> Danışan Memnuniyeti!
         </h2>
         <p class="cs-text">
-          Uzay Psikoloji'de terapi deneyimi yaşayan danışanlarımızın
-          paylaşımları. Gizlilik ilkemiz gereği, isimleri değiştirilmiştir.
+          Terapi deneyimi yaşayan danışanlarımızın paylaşımları. Gizlilik
+          ilkemiz gereği, isimleri değiştirilmiştir.
         </p>
       </div>
       <ul class="cs-card-group">
@@ -895,10 +900,10 @@ import "@styles/index.less"
               aria-hidden="true"
             />
             <p class="cs-item-text">
-              Uzay Psikoloji'ye geldiğimde kendimi çok çaresiz hissediyordum.
-              Dr. Ayşe'nin sıcak ve anlayışlı yaklaşımı sayesinde, hayata bakış
-              açım değişti. Artık kendimi daha iyi anlıyor ve sorunlarımla başa
-              çıkabiliyorum. Buraya geldiğim için çok mutluyum.
+              ${client.name} ile tanışmadan önce kendimi çok çaresiz hissediyordum.
+              Dr. Emre'nin sıcak ve anlayışlı yaklaşımı sayesinde, hayata bakış açım
+              değişti. Artık kendimi daha iyi anlıyor ve sorunlarımla başa çıkabiliyorum.
+              Buraya geldiğim için çok mutluyum.
             </p>
             <span class="cs-name">Mehmet K.</span>
             <span class="cs-job">Tasarımcı, 35</span>
@@ -932,7 +937,7 @@ import "@styles/index.less"
               loading="lazy"
               decoding="async"
               src="/assets/svgs/quote.svg"
-              alt="spidey sense graphic"
+              alt="alıntı grafiği"
               width="58"
               height="48"
               aria-hidden="true"
@@ -941,8 +946,9 @@ import "@styles/index.less"
               Eşimle aramızdaki sorunlar nedeniyle çift terapisine başvurduk.
               Terapistimiz Ahmet Bey, bize birbirimizi dinlemeyi ve anlamayı
               öğretti. Bu süreç sayesinde sadece evliliğimizi kurtarmakla
-              kalmadık, daha mutlu ve güçlü bir çift olduk. Uzay Psikoloji'ye
-              minnettarız.
+              kalmadık, daha mutlu ve güçlü bir çift olduk. İyi ki varsın ${
+                client.name
+              }.
             </p>
             <span class="cs-name">Zeynep ve Ali Ç.</span>
             <span class="cs-job">Restoran İşletmecileri, 35 ve 37</span>
