@@ -7,9 +7,7 @@ import client from "@data/client.json"
 
 <BaseLayout
   title=`${client.name} | ${client.address.city} Psikolog | Terapi | Danışmanlık`
-  `
   description=`${client.address.city} ilinde bireysel, çift, aile ve çocuk terapisi hizmetleri. Uzman kadromuzla ruh sağlığınız için yanınızdayız. Mutlu bir yaşam için ilk adımı atın.`
-  `
   preloadImg="/assets/images/consultant.webp"
 >
   <!-- ============================================ -->
@@ -19,12 +17,12 @@ import client from "@data/client.json"
   <section id="hero-1203">
     <div class="cs-container">
       <div class="cs-content">
-        <span class="cs-topper">${client.name}</span>
+        <span class="cs-topper">{client.name}</span>
         <h1 class="cs-title">
           Ruhunuzun Mimarı: Bizimle İç Dünyanızı Keşfedin
         </h1>
         <p class="cs-text">
-          ${client.name} ile ${client.address.city} psikolog danışmanlığımızla duygusal
+          {client.name} ile {client.address.city} psikolog danışmanlığımızla duygusal
           ve zihinsel sağlığınızı güçlendirin. Deneyimli ekibimiz ve tecrübemizle
           size özel çözümler sunuyoruz.
         </p>
@@ -45,7 +43,6 @@ import client from "@data/client.json"
           decoding="async"
           src="/assets/images/consultant.webp"
           alt=`${client.name} danışmanı`
-          `
           width="886"
           height="842"
         />
@@ -292,10 +289,13 @@ import client from "@data/client.json"
           <h2 class="cs-title">Deneyimli Ekip, Binlerce Mutlu Danışan</h2>
         </div>
         <p class="cs-text-large">
-          ${client.name}, ${client.foundationDate} yılından beri ${
-            client.address.city
-          } ilinde hizmet veren, ruhunuzu ve evinizi güçlendiren bir danışmanlık
-          merkezidir.
+          {client.name}, deneyimli ekibiyle {
+            client.foundationDate > 0
+              ? `${client.foundationDate} yılından beri`
+              : ""
+          }
+          {client.address.city} ilinde hizmet veren, ruhunuzu ve evinizi güçlendiren
+          bir danışmanlık merkezidir.
         </p>
         <p class="cs-text">
           Kuruluşumuzdan bu yana, ruh sağlığı alanında en güncel ve etkili
@@ -312,11 +312,11 @@ import client from "@data/client.json"
           nedenlerini de ele alıyoruz.
         </p>
         <p class="cs-text">
-          ${client.name} olarak, sürekli kendimizi geliştirmeye ve alanımızdaki en
+          {client.name} olarak, sürekli kendimizi geliştirmeye ve alanımızdaki en
           son gelişmeleri takip etmeye önem veriyoruz. Düzenli olarak ulusal ve uluslararası
           konferanslara katılıyor, mesleki eğitimlerimizi güncelliyoruz. Amacımız,
-          ${client.address.city} ve çevresindeki bireylere en kaliteli ve etkili
-          ruh sağlığı hizmetini sunmak, toplum sağlığına katkıda bulunmaktır.
+          {client.address.city} ve çevresindeki bireylere en kaliteli ve etkili ruh
+          sağlığı hizmetini sunmak, toplum sağlığına katkıda bulunmaktır.
         </p>
         <a href="/hakkimizda" class="cs-button-solid">Daha Fazla Öğren &gt;</a>
       </div>
@@ -418,7 +418,7 @@ import client from "@data/client.json"
         <span class="cs-topper">Sizin İçin Yazdık</span>
         <h2 class="cs-title">Ruh Sağlığınız İçin Faydalı Bilgiler</h2>
         <p class="cs-text">
-          ${client.name} blogumuzda, sizin için faydalı olacağını düşündüğümüz konuları
+          {client.name} blogumuzda, sizin için faydalı olacağını düşündüğümüz konuları
           ele alıyoruz. Uzmanlarımızın hazırladığı yazılarla, kendinizi ve sevdiklerinizi
           daha iyi anlamanıza yardımcı olmak istiyoruz.
         </p>
@@ -900,7 +900,7 @@ import client from "@data/client.json"
               aria-hidden="true"
             />
             <p class="cs-item-text">
-              ${client.name} ile tanışmadan önce kendimi çok çaresiz hissediyordum.
+              {client.name} ile tanışmadan önce kendimi çok çaresiz hissediyordum.
               Dr. Emre'nin sıcak ve anlayışlı yaklaşımı sayesinde, hayata bakış açım
               değişti. Artık kendimi daha iyi anlıyor ve sorunlarımla başa çıkabiliyorum.
               Buraya geldiğim için çok mutluyum.
