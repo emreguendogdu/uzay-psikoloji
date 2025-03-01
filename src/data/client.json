@@ -1,15 +1,11 @@
 {
-  "name": "Zort",
+  "name": "Uzay Psikoloji",
   "foundationDate": 2004,
-  "_foundationDateComment": "Enter 0 if you don't know it",
-  "email": "hello@osmangund.tech",
+  "email": "hello@emregnd.com",
   "phoneForTel": "5362221429",
   "phoneFormatted": "0 536 222 1429",
   "address": {
     "city": "Denizli"
   },
-  "instagram": "https://instagram.com/6ajans.co",
-  "facebook": "https://instagram.com/6ajans.co",
-  "google": "https://google.com/search?q=6ajans.co",
-  "domain": "www.uzaypsychologydemo.netlify.app"
+  "domain": "www.uzaypsikolojidemo.netlify.app"
 }
