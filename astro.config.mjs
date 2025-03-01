@@ -10,7 +10,7 @@ export default defineConfig({
           name: "git-gateway",
           branch: "master",
         },
-        logo_url: "https://www.osmangund.tech/logo.svg",
+        logo_url: "",
         media_folder: "public/assets/images/blog",
         public_folder: "/assets/images/blog",
         collections: [

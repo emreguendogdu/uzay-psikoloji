@@ -3,7 +3,6 @@ import client from "@data/client.json";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import "@styles/root.less";
-import "@styles/dark.less";
 
 const {description, title, preloadImg = ""} = Astro.props;
 ---
@@ -55,7 +54,6 @@ const {description, title, preloadImg = ""} = Astro.props;
     
             <!-- Sitewide Scripts -->
             <script defer src="/assets/js/nav.js"></script>
-            <!-- <script defer src="/assets/js/dark.js"></script> -->
    
             {Astro.url.pathname === "/" &&
             <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
